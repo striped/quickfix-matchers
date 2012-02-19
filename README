@@ -3,10 +3,18 @@ QuickFIX/J message matcher set
 
 Matchers that can be helpful in FIX related application used QuickFIX/J engine.
 
+For instance, following code snippet demonstrate how to mock the QuickFIX/J message and check that market data entry
+has not price specified:
+
 @FIXDictionary(path = "FIX44.xml")
 public class Test {
 
     @Test
     public void test() throws InvalidMessage {
+        final Message message = new MessageMocker("W") {{
+            imply("55=EUR/USD", "268=1", "269=1");
+        }}.createMessage();
+
+        assertThat(message, not(hasGroupThat(268, hasField(270))));
     }
 }

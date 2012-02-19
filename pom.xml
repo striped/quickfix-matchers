@@ -4,12 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.kot.tool</groupId>
-    <artifactId>qf-test</artifactId>
+    <artifactId>quickfix-matchers</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
 
     <name>quickfixj-matchers</name>
     <url>http://maven.apache.org</url>
+
+    <scm>
+        <connection>scm:git:git://github.com/striped/quickfix-matchers.git</connection>
+        <url>scm:git:git://github.com/striped/quickfix-matchers.git</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
