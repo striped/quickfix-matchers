@@ -1,0 +1,15 @@
+<matchers>
+
+    <!-- Hamcrest library -->
+    <factory class="org.hamcrest.core.Is"/>
+    <factory class="org.hamcrest.text.IsEmptyString"/>
+    <factory class="org.hamcrest.text.IsEqualIgnoringCase"/>
+    <factory class="org.hamcrest.text.IsEqualIgnoringWhiteSpace"/>
+    <factory class="org.hamcrest.text.StringContainsInOrder"/>
+
+    <!-- Custom extension -->
+    <factory class="org.kot.tool.quickfix.MatchRegExp"/>
+    <factory class="org.kot.tool.quickfix.HasField"/>
+    <factory class="org.kot.tool.quickfix.HasGroup"/>
+
+</matchers>
